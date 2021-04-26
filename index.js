@@ -1,16 +1,16 @@
 //1.""Ways to print in JavaScript"""
-console.log("hello world");
+// console.log("hello world");
 //alert("me"); this tag is not used!
 // document.write("This is document write");
 
 //""2. JavaScript console API"""
-console.log("hello world", 4 + 6, "Another log");
+// console.log("hello world", 4 + 6, "Another log");
 //alert("me"); this tag is not used!
 // document.write("This is document write");
-console.warn("this a warning");
+// console.warn("this a warning");
 //Error identify karne ke liye use karte hai
 //kahi bhi kisi bhi jagah par Error ko lock karna hua to use karege
-console.error("This is an error");
+// console.error("This is an error");
 
 //3. JavaScript Variables
 //What are Variables? ----Containers to store data values
@@ -18,7 +18,7 @@ console.error("This is an error");
 /* Multi Line Comment */
 var number1 = 45;
 var number2 = 55;
-console.log(number1 + number2);
+// console.log(number1 + number2);
 
 // 4. Data Type  in JavaScript
 // Number
@@ -35,19 +35,19 @@ var marks = {
   sbhubham: 43,
   tommy: 54,
 };
-console.log(marks);
+// console.log(marks);
 
 //Booleans
 var a = true;
 var b = false;
-console.log(a, b);
+// console.log(a, b);
 
 //var und= undefined
 var und;
-console.log(und);
+// console.log(und);
 // Null
 var n = null;
-console.log(n);
+// console.log(n);
 
 /*
 At a very high level, ther are 2 types of data type in JavaScript
@@ -56,4 +56,49 @@ At a very high level, ther are 2 types of data type in JavaScript
 */
 
 var arr = [1, 2, 3, 4, 5];
-console.log(arr);
+// console.log(arr);
+
+//Operators in JavaScript
+//Arithmetic Operators
+var a = 45;
+var b = 56;
+console.log("The value of a+b", a + b);
+console.log("The value of a-b", a - b);
+console.log("The value of a*b", a * b);
+console.log("The value of a/b", a / b);
+
+// Assigment Operators
+var c = b;
+// c += 2;
+// c -= 2; //c =c-2;
+// c *= 2;
+// c /= 2;
+console.log(c);
+
+//Comparison Operators
+var x = 34;
+var y = 56;
+// console.log(x == y);
+// console.log(x <= y);
+// console.log(x >= y);
+// console.log(x < y);
+// console.log(x > y);
+// console.log(x != y);
+
+// Logical Operators
+// Logical And(&&)
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && true);
+// console.log(false && false);
+
+// Logical Or(||)
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
+
+// | Bitwise operator
+// Logical Not
+console.log(!false);
+console.log(!true);
