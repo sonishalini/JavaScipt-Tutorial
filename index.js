@@ -62,10 +62,10 @@ var arr = [1, 2, 3, 4, 5];
 //Arithmetic Operators
 var a = 45;
 var b = 56;
-console.log("The value of a+b", a + b);
-console.log("The value of a-b", a - b);
-console.log("The value of a*b", a * b);
-console.log("The value of a/b", a / b);
+// console.log("The value of a+b", a + b);
+// console.log("The value of a-b", a - b);
+// console.log("The value of a*b", a * b);
+// console.log("The value of a/b", a / b);
 
 // Assigment Operators
 var c = b;
@@ -73,7 +73,7 @@ var c = b;
 // c -= 2; //c =c-2;
 // c *= 2;
 // c /= 2;
-console.log(c);
+// console.log(c);
 
 //Comparison Operators
 var x = 34;
@@ -100,5 +100,44 @@ var y = 56;
 
 // | Bitwise operator
 // Logical Not
-console.log(!false);
-console.log(!true);
+// console.log(!false);
+// console.log(!true);
+
+// Function in JavaScript
+// DRY = Do not repeat yourself
+function avg(a, b) {
+  //   return (a + b) / 2;
+  c = (a + b) / 2;
+  return c;
+}
+c1 = avg(4, 6);
+c2 = avg(56, 85);
+// console.log(c1, c2);
+
+// Conditionals Statements in JavaScript
+
+var age = 41;
+//Single if statement
+if (age > 18) {
+  console.log("You can drink !");
+}
+//if-else statement
+if (age > 18) {
+  console.log("You can drink !");
+} else {
+  console.log("You can't drink !");
+}
+
+// if-else Ladder
+if (age > 32) {
+  console.log("You are adult");
+} else if (age > 21) {
+  console.log("Boy eligible for married");
+} else if (age > 18) {
+  console.log("Girl eligible for married");
+} else if (age > 11) {
+  console.log("You are child !");
+} else {
+  console.log("You are Kid !");
+}
+console.log("End of ladder");
