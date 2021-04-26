@@ -118,7 +118,7 @@ c2 = avg(56, 85);
 
 var age = 41;
 //Single if statement
-if (age > 18) {
+/*if (age > 18) {
   console.log("You can drink !");
 }
 //if-else statement
@@ -126,10 +126,10 @@ if (age > 18) {
   console.log("You can drink !");
 } else {
   console.log("You can't drink !");
-}
+}*/
 
 // if-else Ladder
-if (age > 32) {
+/*if (age > 32) {
   console.log("You are adult");
 } else if (age > 21) {
   console.log("Boy eligible for married");
@@ -141,3 +141,33 @@ if (age > 32) {
   console.log("You are Kid !");
 }
 console.log("End of ladder");
+*/
+
+// Array in JavaScript
+// For Loop
+var arr = [1, 2, 3, 4, 5, 6, 7];
+/*for (var i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}*/
+
+//For each Loop
+/*arr.forEach(function (element) {
+  console.log(element);
+});*/
+
+// const aa = 0; //const ko kabhi change nai karege to use karte hai
+// aa++;
+// aa = aa + 1;
+
+//While loop -- conditon check karte phir run hota hai
+let j = 0;
+// while (j < arr.length) {
+//   console.log(arr[j]);
+//   j++;
+// }
+
+// Do-While Loop ----first time run then check condition
+do {
+  console.log(arr[j]);
+  j++;
+} while (j < arr.length);
