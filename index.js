@@ -249,3 +249,41 @@ sel = document.querySelector(".container");
 console.log(sel);
 sel = document.querySelectorAll(".container");
 console.log(sel);
+
+function clicked() {
+  console.log("the button was clicked !");
+}
+window.onload = function () {
+  console.log("The document was clicked !");
+};
+// Events in JavaScript
+//Clicked Event
+// firstContainer.addEventListener("click", function () {
+//   document.querySelectorAll(".container")[1].innerHTML =
+//     "<b> We have Clicked</b>";
+//   console.log("Clicked on Container !");
+// });
+
+//Mouseover Event
+// firstContainer.addEventListener("mouseover", function () {
+//   console.log("Mouse on Container !");
+// });
+
+//mouseout Event
+// firstContainer.addEventListener("mouseout", function () {
+//   console.log("Mouse out Container !");
+// });
+
+//mouseup Event
+let prevHTML = document.querySelectorAll(".container")[1].innerHTML;
+firstContainer.addEventListener("mouseup", function () {
+  document.querySelectorAll(".container")[1].innerHTML = prevHTML;
+  console.log("Mouse up when clicked on Container !");
+});
+
+//mousedown Event
+firstContainer.addEventListener("mousedown", function () {
+  document.querySelectorAll(".container")[1].innerHTML =
+    "<b> We have Clicked</b>";
+  console.log("Mouse down when Clicked on Container !");
+});
