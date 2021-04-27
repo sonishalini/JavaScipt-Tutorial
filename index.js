@@ -146,13 +146,13 @@ console.log("End of ladder");
 // Array in JavaScript
 // For Loop
 var arr = [1, 2, 3, 4, 5, 6, 7];
-for (var i = 0; i < arr.length; i++) {
-  if (i == 2) {
-    // break; //Looping karna chod do
-    continue; //Continue ka matlb hota hai is iteration ko chodo dusari iteration me baad jao
-  }
-  console.log(arr[i]);
-}
+// for (var i = 0; i < arr.length; i++) {
+//   if (i == 2) {
+//     // break; //Looping karna chod do
+//     continue; //Continue ka matlb hota hai is iteration ko chodo dusari iteration me baad jao
+//   }
+//   console.log(arr[i]);
+// }
 
 //For each Loop
 /*arr.forEach(function (element) {
@@ -164,7 +164,7 @@ for (var i = 0; i < arr.length; i++) {
 // aa = aa + 1;
 
 //While loop -- conditon check karte phir run hota hai
-let j = 0;
+// let j = 0;
 // while (j < arr.length) {
 //   console.log(arr[j]);
 //   j++;
@@ -175,3 +175,22 @@ let j = 0;
 //   console.log(arr[j]);
 //   j++;
 // } while (j < arr.length);
+
+let myArr = ["Fan", "Camera", 34, null, true];
+//Array Methods
+console.log(myArr.length);
+// myArr.pop(); //last me se ek value remove ho jayegi
+// myArr.push("shalni"); //Push se ham ek value ko add kar sakte hai
+// myArr.shift(); //shift se hamare arr ki first value remove ho jayegi
+const newLen = myArr.unshift("shalni");
+console.log(newLen);
+console.log(myArr);
+
+/* toString
+myArr.toString()
+"shalni,Fan,Camera,34,,true"
+*/
+
+/*Sort
+myArr.sort()
+(6) [34, "Camera", "Fan", null, "shalni", true]*/
