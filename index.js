@@ -208,12 +208,44 @@ let myLovelyString = "Shalini is a good girl !";
 //Date Method in JavaScript
 
 let myDate = new Date();
-console.log(myDate.getTime()); //"getTime" Time ko seconds me deta hai
-console.log(myDate.getFullYear()); //"getFullYear" date as a four digit
-console.log(myDate.getMonth());
-console.log(myDate.getHours());
-console.log(myDate.getDate());
-console.log(myDate.getMinutes());
-console.log(myDate.getSeconds());
-console.log(myDate.getMilliseconds());
-console.log(myDate.getDay());
+// console.log(myDate.getTime()); //"getTime" Time ko seconds me deta hai
+// console.log(myDate.getFullYear()); //"getFullYear" date as a four digit
+// console.log(myDate.getMonth());
+// console.log(myDate.getHours());
+// console.log(myDate.getDate());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getSeconds());
+// console.log(myDate.getMilliseconds());
+// console.log(myDate.getDay());
+
+// JavaScript DOM (Document Object Mode) Manipulation
+// consol par ja kar command ko run karna hai in future
+//  document
+//  document.location
+let elem = document.getElementById("click");
+// console.log(elem);
+
+let elemClass = document.getElementsByClassName("container");
+// console.log(elemClass);
+// elemClass[0].style.background = "SlateBlue";
+elemClass[0].classList.add("bg-primary");
+elemClass[0].classList.add("text-Success");
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+// console.log(elemClass[0].innerHTML);
+// console.log(elemClass[0].innerText);
+tn = document.getElementsByTagName("div");
+console.log(tn);
+createdElement = document.createElement("p");
+createdElement.innerText = "This is a created para";
+tn[0].appendChild(createdElement);
+createdElement2 = document.createElement("b");
+createdElement2.innerText = "This is a created bold";
+tn[0].replaceChild(createdElement2, createdElement);
+// removeChild(Element);---->Remove an Element
+
+//Selecting using Query
+sel = document.querySelector(".container");
+console.log(sel);
+sel = document.querySelectorAll(".container");
+console.log(sel);
