@@ -202,5 +202,18 @@ let myLovelyString = "Shalini is a good girl !";
 // console.log(myLovelyString.lastIndexOf("d")); //last index ki value bata raha hai jo hame diya hai
 
 // console.log(myLovelyString.slice(0, 3));
-d = myLovelyString.replace("Shalini", "AbhiSha");
-console.log(d, myLovelyString);
+// d = myLovelyString.replace("Shalini", "AbhiSha");
+// console.log(d, myLovelyString);
+
+//Date Method in JavaScript
+
+let myDate = new Date();
+console.log(myDate.getTime()); //"getTime" Time ko seconds me deta hai
+console.log(myDate.getFullYear()); //"getFullYear" date as a four digit
+console.log(myDate.getMonth());
+console.log(myDate.getHours());
+console.log(myDate.getDate());
+console.log(myDate.getMinutes());
+console.log(myDate.getSeconds());
+console.log(myDate.getMilliseconds());
+console.log(myDate.getDay());
