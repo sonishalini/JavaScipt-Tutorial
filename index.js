@@ -146,9 +146,13 @@ console.log("End of ladder");
 // Array in JavaScript
 // For Loop
 var arr = [1, 2, 3, 4, 5, 6, 7];
-/*for (var i = 0; i < arr.length; i++) {
+for (var i = 0; i < arr.length; i++) {
+  if (i == 2) {
+    // break; //Looping karna chod do
+    continue; //Continue ka matlb hota hai is iteration ko chodo dusari iteration me baad jao
+  }
   console.log(arr[i]);
-}*/
+}
 
 //For each Loop
 /*arr.forEach(function (element) {
@@ -167,7 +171,7 @@ let j = 0;
 // }
 
 // Do-While Loop ----first time run then check condition
-do {
-  console.log(arr[j]);
-  j++;
-} while (j < arr.length);
+// do {
+//   console.log(arr[j]);
+//   j++;
+// } while (j < arr.length);
