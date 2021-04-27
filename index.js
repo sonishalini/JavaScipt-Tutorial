@@ -178,13 +178,13 @@ var arr = [1, 2, 3, 4, 5, 6, 7];
 
 let myArr = ["Fan", "Camera", 34, null, true];
 //Array Methods
-console.log(myArr.length);
+// console.log(myArr.length);
 // myArr.pop(); //last me se ek value remove ho jayegi
 // myArr.push("shalni"); //Push se ham ek value ko add kar sakte hai
 // myArr.shift(); //shift se hamare arr ki first value remove ho jayegi
-const newLen = myArr.unshift("shalni");
-console.log(newLen);
-console.log(myArr);
+// const newLen = myArr.unshift("shalni");
+// console.log(newLen);
+// console.log(myArr);
 
 /* toString
 myArr.toString()
@@ -194,3 +194,13 @@ myArr.toString()
 /*Sort
 myArr.sort()
 (6) [34, "Camera", "Fan", null, "shalni", true]*/
+
+// String Methods in JavaScript
+let myLovelyString = "Shalini is a good girl !";
+// console.log(myLovelyString.length);
+// console.log(myLovelyString.indexOf("good")); //particular index ki value ko find karke de raha hai
+// console.log(myLovelyString.lastIndexOf("d")); //last index ki value bata raha hai jo hame diya hai
+
+// console.log(myLovelyString.slice(0, 3));
+d = myLovelyString.replace("Shalini", "AbhiSha");
+console.log(d, myLovelyString);
