@@ -245,17 +245,17 @@ tn[0].replaceChild(createdElement2, createdElement);
 // removeChild(Element);---->Remove an Element
 
 //Selecting using Query
-sel = document.querySelector(".container");
-console.log(sel);
-sel = document.querySelectorAll(".container");
-console.log(sel);
+// sel = document.querySelector(".container");
+// console.log(sel);
+// sel = document.querySelectorAll(".container");
+// console.log(sel);
 
-function clicked() {
-  console.log("the button was clicked !");
-}
-window.onload = function () {
-  console.log("The document was clicked !");
-};
+// function clicked() {
+//   console.log("the button was clicked !");
+// }
+// window.onload = function () {
+//   console.log("The document was clicked !");
+// };
 // Events in JavaScript
 //Clicked Event
 // firstContainer.addEventListener("click", function () {
@@ -275,15 +275,36 @@ window.onload = function () {
 // });
 
 //mouseup Event
-let prevHTML = document.querySelectorAll(".container")[1].innerHTML;
-firstContainer.addEventListener("mouseup", function () {
-  document.querySelectorAll(".container")[1].innerHTML = prevHTML;
-  console.log("Mouse up when clicked on Container !");
-});
+// let prevHTML = document.querySelectorAll(".container")[1].innerHTML;
+// firstContainer.addEventListener("mouseup", function () {
+//   document.querySelectorAll(".container")[1].innerHTML = prevHTML;
+//   console.log("Mouse up when clicked on Container !");
+// });
 
-//mousedown Event
-firstContainer.addEventListener("mousedown", function () {
+// //mousedown Event
+// firstContainer.addEventListener("mousedown", function () {
+//   document.querySelectorAll(".container")[1].innerHTML =
+//     "<b> We have Clicked</b>";
+//   console.log("Mouse down when Clicked on Container !");
+// });
+
+//Arrow function
+function sum(a, b) {
+  return a + b;
+}
+// summ = (a, b) => {
+//   return a + b;
+// };
+
+logKaro = () => {
   document.querySelectorAll(".container")[1].innerHTML =
-    "<b> We have Clicked</b>";
-  console.log("Mouse down when Clicked on Container !");
-});
+    "<b> Set interval fired</b>";
+  console.log("I am your log !");
+};
+
+// setTimeOut and setInterval in JavaScript
+// pehal argument ek function hota hai
+clr = setTimeout(logKaro, 5000);
+
+// clr = setInterval(logKaro, 2000);
+// use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
