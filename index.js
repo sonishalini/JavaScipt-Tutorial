@@ -234,14 +234,14 @@ elemClass[0].classList.add("text-Success");
 // console.log(elem.innerText);
 // console.log(elemClass[0].innerHTML);
 // console.log(elemClass[0].innerText);
-tn = document.getElementsByTagName("div");
-console.log(tn);
-createdElement = document.createElement("p");
-createdElement.innerText = "This is a created para";
-tn[0].appendChild(createdElement);
-createdElement2 = document.createElement("b");
-createdElement2.innerText = "This is a created bold";
-tn[0].replaceChild(createdElement2, createdElement);
+// tn = document.getElementsByTagName("div");
+// console.log(tn);
+// createdElement = document.createElement("p");
+// createdElement.innerText = "This is a created para";
+// tn[0].appendChild(createdElement);
+// createdElement2 = document.createElement("b");
+// createdElement2.innerText = "This is a created bold";
+// tn[0].replaceChild(createdElement2, createdElement);
 // removeChild(Element);---->Remove an Element
 
 //Selecting using Query
@@ -296,32 +296,47 @@ function sum(a, b) {
 //   return a + b;
 // };
 
-logKaro = () => {
-  document.querySelectorAll(".container")[1].innerHTML =
-    "<b> Set interval fired</b>";
-  console.log("I am your log !");
-};
+// logKaro = () => {
+//   document.querySelectorAll(".container")[1].innerHTML =
+//     "<b> Set interval fired</b>";
+//   console.log("I am your log !");
+// };
 
 // setTimeOut and setInterval in JavaScript
 // pehal argument ek function hota hai
-clr = setTimeout(logKaro, 5000);
+// clr = setTimeout(logKaro, 5000);
 
 // clr = setInterval(logKaro, 2000);
 // use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
 
 // JavaScript localStorage
-//Har domain ki aapni aapni local staroge hoti hai 
+//Har domain ki aapni aapni local staroge hoti hai
 // ye localStorage ki command ham console par likhege
-localStorage.setItem('name','shalini')
-undefined
-localStorage
-Storage {name: "shalini", length: 1}length: 1name: "shalini"__proto__: Storageclear: ƒ clear()getItem: ƒ getItem()key: ƒ key()length: (...)removeItem: ƒ removeItem()setItem: ƒ setItem()constructor: ƒ Storage()Symbol(Symbol.toStringTag): "Storage"get length: ƒ length()__proto__: Object
-localStorage.clear()
-undefined
-localStorage.set
-undefined
-localStorage.setItem('name','shalini')
-undefined
-localStorage
-Storage {name: "shalini", length: 1}
+// localStorage.setItem('name','shalini')
+// undefined
+// localStorage
+// Storage {name: "shalini", length: 1}length: 1name: "shalini"__proto__: Storageclear: ƒ clear()getItem: ƒ getItem()key: ƒ key()length: (...)removeItem: ƒ removeItem()setItem: ƒ setItem()constructor: ƒ Storage()Symbol(Symbol.toStringTag): "Storage"get length: ƒ length()__proto__: Object
+// localStorage.clear()
+// undefined
+// localStorage.set
+// undefined
+// localStorage.setItem('name','shalini')
+// undefined
+// localStorage
+// Storage {name: "shalini", length: 1}
+// localStorage.removeItem("name");
+// localStorage.clear();
 //ham localStrogae me personal infromation ko share nai karege
+
+// About JSON (javascript object notation)
+// open standard file format hai jo ki data ko exchange kar me use
+// kiya jata hai
+// json ko string me convert karke tarnprot kar sakte hai or
+// vapas bula kar object bana sakte ahi
+// JSON requtrs double quotes ("")
+obj = { name: "shalni", length: 1, a: { this: "that" } };
+jso = JSON.stringify(obj);
+console.log(typeof jso);
+console.log(jso);
+parsed = JSON.parse(`{"name":"shalini","length":1,"a":{"this":"that"}}`);
+console.log(parsed);
