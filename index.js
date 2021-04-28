@@ -308,3 +308,20 @@ clr = setTimeout(logKaro, 5000);
 
 // clr = setInterval(logKaro, 2000);
 // use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
+
+// JavaScript localStorage
+//Har domain ki aapni aapni local staroge hoti hai 
+// ye localStorage ki command ham console par likhege
+localStorage.setItem('name','shalini')
+undefined
+localStorage
+Storage {name: "shalini", length: 1}length: 1name: "shalini"__proto__: Storageclear: ƒ clear()getItem: ƒ getItem()key: ƒ key()length: (...)removeItem: ƒ removeItem()setItem: ƒ setItem()constructor: ƒ Storage()Symbol(Symbol.toStringTag): "Storage"get length: ƒ length()__proto__: Object
+localStorage.clear()
+undefined
+localStorage.set
+undefined
+localStorage.setItem('name','shalini')
+undefined
+localStorage
+Storage {name: "shalini", length: 1}
+//ham localStrogae me personal infromation ko share nai karege
