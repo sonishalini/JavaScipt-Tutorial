@@ -334,9 +334,12 @@ function sum(a, b) {
 // json ko string me convert karke tarnprot kar sakte hai or
 // vapas bula kar object bana sakte ahi
 // JSON requtrs double quotes ("")
-obj = { name: "shalni", length: 1, a: { this: "that" } };
-jso = JSON.stringify(obj);
-console.log(typeof jso);
-console.log(jso);
-parsed = JSON.parse(`{"name":"shalini","length":1,"a":{"this":"that"}}`);
-console.log(parsed);
+// obj = { name: "shalni", length: 1, a: { this: "that" } };
+// jso = JSON.stringify(obj);
+// console.log(typeof jso);
+// console.log(jso);
+// parsed = JSON.parse(`{"name":"shalini","length":1,"a":{"this":"that"}}`);
+// console.log(parsed);
+
+// javascript version
+// self padhna hai
